@@ -200,6 +200,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\tb_Current_Intersection_Service_DatasetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -785,6 +786,11 @@
     </Content>
     <None Include="Project_Readme.html" />
     <Content Include="Views\Home\agency.cshtml" />
+    <Content Include="Views\tb_Current_Intersection_Service_Dataset\Create.cshtml" />
+    <Content Include="Views\tb_Current_Intersection_Service_Dataset\Delete.cshtml" />
+    <Content Include="Views\tb_Current_Intersection_Service_Dataset\Details.cshtml" />
+    <Content Include="Views\tb_Current_Intersection_Service_Dataset\Edit.cshtml" />
+    <Content Include="Views\tb_Current_Intersection_Service_Dataset\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

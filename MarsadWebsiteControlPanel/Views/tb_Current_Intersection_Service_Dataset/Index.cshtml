@@ -1,0 +1,91 @@
+﻿@model IEnumerable<MarsadWebsiteControlPanel.Models.tb_Current_Intersection_Service_Dataset>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ConsumerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProviderID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatasetActivatedToUsedByService)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GSBDatasetID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImportingDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VersionNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VersionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataSourceName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tb_Current_MarsadDataset.DatasetFullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tb_Current_Service.ConsumerID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ConsumerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProviderID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatasetActivatedToUsedByService)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GSBDatasetID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImportingDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VersionNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VersionDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataSourceName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tb_Current_MarsadDataset.DatasetFullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tb_Current_Service.ConsumerID)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |*@
+            @Html.ActionLink("Edit", "Edit", "tb_Current_Intersection_Service_Dataset", new { ServiceID = item.ServiceID, DatasetID = item.DatasetID }, null) |
+
+
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
