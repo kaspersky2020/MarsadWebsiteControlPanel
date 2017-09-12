@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Marsad080620160430PM_Test_V1_TemporaryModelStoreContainer" CdmEntityContainer="Marsad080620160430PM_Test_V1_TemporaryDBContext">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Activation">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Activation">
+        <MappingFragment StoreEntitySet="tb_Current_Activation">
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="ConsumerArabicName" ColumnName="ConsumerArabicName" />
+          <ScalarProperty Name="GSBServiceCode" ColumnName="GSBServiceCode" />
+          <ScalarProperty Name="GSBServiceArabicName" ColumnName="GSBServiceArabicName" />
+          <ScalarProperty Name="GSBOperationCode" ColumnName="GSBOperationCode" />
+          <ScalarProperty Name="GSBOperationArabicName" ColumnName="GSBOperationArabicName" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="ProviderArabicName" ColumnName="ProviderArabicName" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Agency">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Agency">
+        <MappingFragment StoreEntitySet="tb_Current_Agency">
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="AgencyArabicName" ColumnName="AgencyArabicName" />
+          <ScalarProperty Name="AgencyEnglishName" ColumnName="AgencyEnglishName" />
+          <ScalarProperty Name="AgencyEnglishNameAbbreviation" ColumnName="AgencyEnglishNameAbbreviation" />
+          <ScalarProperty Name="AgencyCategoryID" ColumnName="AgencyCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Consumer">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Consumer">
+        <MappingFragment StoreEntitySet="tb_Current_Consumer">
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="ConsumerArabicName" ColumnName="ConsumerArabicName" />
+          <ScalarProperty Name="CurrentlyConsumerOnGSB" ColumnName="CurrentlyConsumerOnGSB" />
+          <ScalarProperty Name="NeedsToBeConsumerOnGSB" ColumnName="NeedsToBeConsumerOnGSB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Consumer_Old12082017">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Consumer_Old12082017">
+        <MappingFragment StoreEntitySet="tb_Current_Consumer_Old12082017">
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="ConsumerName" ColumnName="ConsumerName" />
+          <ScalarProperty Name="ConsumerCurrentlyOnGSB" ColumnName="ConsumerCurrentlyOnGSB" />
+          <ScalarProperty Name="ConsumerToBeOnGSB" ColumnName="ConsumerToBeOnGSB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_GSBOperation">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_GSBOperation">
+        <MappingFragment StoreEntitySet="tb_Current_GSBOperation">
+          <ScalarProperty Name="OperationCode" ColumnName="OperationCode" />
+          <ScalarProperty Name="OperationArabicName" ColumnName="OperationArabicName" />
+          <ScalarProperty Name="OperationEnglishName" ColumnName="OperationEnglishName" />
+          <ScalarProperty Name="ServiceCode" ColumnName="ServiceCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_GSBService">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_GSBService">
+        <MappingFragment StoreEntitySet="tb_Current_GSBService">
+          <ScalarProperty Name="GSBServiceCode" ColumnName="GSBServiceCode" />
+          <ScalarProperty Name="GSBServiceArabicName" ColumnName="GSBServiceArabicName" />
+          <ScalarProperty Name="GSBServiceEnglishName" ColumnName="GSBServiceEnglishName" />
+          <ScalarProperty Name="GSBProviderID" ColumnName="GSBProviderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_MarsadDataset_GSBService">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_MarsadDataset_GSBService">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_MarsadDataset_GSBService">
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetFullName" ColumnName="DatasetFullName" />
+          <ScalarProperty Name="GSBServiceCode" ColumnName="GSBServiceCode" />
+          <ScalarProperty Name="GSBDatasetShortName" ColumnName="GSBDatasetShortName" />
+          <ScalarProperty Name="DatasetAvaiableOnGSB" ColumnName="DatasetAvaiableOnGSB" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="GSBProviderID" ColumnName="GSBProviderID" />
+          <ScalarProperty Name="ShowInResult" ColumnName="ShowInResult" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_Dataset">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_Dataset">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_Dataset">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_ServiceChannel">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_ServiceChannel">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_ServiceChannel">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceChannelID" ColumnName="ServiceChannelID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_ServiceChannel_Log">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_ServiceChannel_Log">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_ServiceChannel_Log">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceChannelID" ColumnName="ServiceChannelID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_ServiceTypeByBeneficary">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_ServiceTypeByBeneficary">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_ServiceTypeByBeneficary">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceTypeByBeneficiaryID" ColumnName="ServiceTypeByBeneficiaryID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_ServiceTypeByBeneficary_Log">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_ServiceTypeByBeneficary_Log">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_ServiceTypeByBeneficary_Log">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceTypeByBeneficiaryID" ColumnName="ServiceTypeByBeneficiaryID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_MappingMarsadTableColumns">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_MappingMarsadTableColumns">
+        <MappingFragment StoreEntitySet="tb_Current_MappingMarsadTableColumns">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SaadColumnName" ColumnName="SaadColumnName" />
+          <ScalarProperty Name="SEColumnName" ColumnName="SEColumnName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_MarsadDataset">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_MarsadDataset">
+        <MappingFragment StoreEntitySet="tb_Current_MarsadDataset">
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetFullName" ColumnName="DatasetFullName" />
+          <ScalarProperty Name="DatasetShortName" ColumnName="DatasetShortName" />
+          <ScalarProperty Name="GSBServiceCode" ColumnName="GSBServiceCode" />
+          <ScalarProperty Name="GSBDatasetFullName" ColumnName="GSBDatasetFullName" />
+          <ScalarProperty Name="GSBDatasetShortName" ColumnName="GSBDatasetShortName" />
+          <ScalarProperty Name="DatasetAvaiableOnGSB" ColumnName="DatasetAvaiableOnGSB" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="GSBProviderID" ColumnName="GSBProviderID" />
+          <ScalarProperty Name="ShowInResult" ColumnName="ShowInResult" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_MarsadDataset_Log">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_MarsadDataset_Log">
+        <MappingFragment StoreEntitySet="tb_Current_MarsadDataset_Log">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetName_Old" ColumnName="DatasetName_Old" />
+          <ScalarProperty Name="DatasetName" ColumnName="DatasetName" />
+          <ScalarProperty Name="DatasetAvaiableOnGSB" ColumnName="DatasetAvaiableOnGSB" />
+          <ScalarProperty Name="NumberOfServicesConsuimngDataset" ColumnName="NumberOfServicesConsuimngDataset" />
+          <ScalarProperty Name="NumberOfConsumers" ColumnName="NumberOfConsumers" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="ShowInResult" ColumnName="ShowInResult" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_MarsadDataset_Old">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_MarsadDataset_Old">
+        <MappingFragment StoreEntitySet="tb_Current_MarsadDataset_Old">
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetFullName" ColumnName="DatasetFullName" />
+          <ScalarProperty Name="DatasetShortName" ColumnName="DatasetShortName" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="GSBDatasetFullName" ColumnName="GSBDatasetFullName" />
+          <ScalarProperty Name="GSBDatasetShortName" ColumnName="GSBDatasetShortName" />
+          <ScalarProperty Name="DatasetAvaiableOnGSB" ColumnName="DatasetAvaiableOnGSB" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="GSBProviderID" ColumnName="GSBProviderID" />
+          <ScalarProperty Name="ShowInResult" ColumnName="ShowInResult" />
+          <ScalarProperty Name="GSBServiceID" ColumnName="GSBServiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Provider">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Provider">
+        <MappingFragment StoreEntitySet="tb_Current_Provider">
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="ProviderArabicName" ColumnName="ProviderArabicName" />
+          <ScalarProperty Name="CurrentlyProviderOnGSB" ColumnName="CurrentlyProviderOnGSB" />
+          <ScalarProperty Name="NeedsToBeProviderOnGSB" ColumnName="NeedsToBeProviderOnGSB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Provider_Old12082017">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Provider_Old12082017">
+        <MappingFragment StoreEntitySet="tb_Current_Provider_Old12082017">
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="ProviderName" ColumnName="ProviderName" />
+          <ScalarProperty Name="ProviderCurrentlyOnGSB" ColumnName="ProviderCurrentlyOnGSB" />
+          <ScalarProperty Name="ProviderToBeOnGSB" ColumnName="ProviderToBeOnGSB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Service">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Service">
+        <MappingFragment StoreEntitySet="tb_Current_Service">
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ServiceEnglishName" ColumnName="ServiceEnglishName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="FinancedByYesser" ColumnName="FinancedByYesser" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceNow" ColumnName="TimeTakenToDelivereTheServiceNow" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceInFuture" ColumnName="TimeTakenToDelivereTheServiceInFuture" />
+          <ScalarProperty Name="OutsideBranchesToProvideTheService" ColumnName="OutsideBranchesToProvideTheService" />
+          <ScalarProperty Name="DigitalCertificateIssued" ColumnName="DigitalCertificateIssued" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="HigherMaturityServiceLevelToBeReachedID" ColumnName="HigherMaturityServiceLevelToBeReachedID" />
+          <ScalarProperty Name="HigriDateForTransmissitingServiceToTopMaturityLevel" ColumnName="HigriDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="GregorianDateForTransmissitingServiceToTopMaturityLevel" ColumnName="GregorianDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="EnglishHyperLink" ColumnName="EnglishHyperLink" />
+          <ScalarProperty Name="YouTubeLink" ColumnName="YouTubeLink" />
+          <ScalarProperty Name="ServiceManual" ColumnName="ServiceManual" />
+          <ScalarProperty Name="ServiceForm" ColumnName="ServiceForm" />
+          <ScalarProperty Name="ServiceArabicDescription" ColumnName="ServiceArabicDescription" />
+          <ScalarProperty Name="ServiceEnglishDescription" ColumnName="ServiceEnglishDescription" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedManuallyIn6Months" ColumnName="NumberOfServiceRequestProcessedManuallyIn6Months" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedElectronically6Months" ColumnName="NumberOfServiceRequestProcessedElectronically6Months" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_AgencyCategory">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_AgencyCategory">
+        <MappingFragment StoreEntitySet="tb_List_AgencyCategory">
+          <ScalarProperty Name="AgencyCategoryID" ColumnName="AgencyCategoryID" />
+          <ScalarProperty Name="AgencyCategoryName" ColumnName="AgencyCategoryName" />
+          <ScalarProperty Name="AgencyCategoryProviderID" ColumnName="AgencyCategoryProviderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceAutomationPortabilityInItsCurrentState">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceAutomationPortabilityInItsCurrentState">
+        <MappingFragment StoreEntitySet="tb_List_ServiceAutomationPortabilityInItsCurrentState">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateName" ColumnName="ServiceAutomationPortabilityInItsCurrentStateName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceChannel">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceChannel">
+        <MappingFragment StoreEntitySet="tb_List_ServiceChannel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceChannelID" ColumnName="ServiceChannelID" />
+          <ScalarProperty Name="ServiceChannelName" ColumnName="ServiceChannelName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceClassification">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceClassification">
+        <MappingFragment StoreEntitySet="tb_List_ServiceClassification">
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceClassificationName" ColumnName="ServiceClassificationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceFees">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceFees">
+        <MappingFragment StoreEntitySet="tb_List_ServiceFees">
+          <ScalarProperty Name="ServiceFeesID" ColumnName="ServiceFeesID" />
+          <ScalarProperty Name="ServiceFeesName" ColumnName="ServiceFeesName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceGeographicalCoverage">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceGeographicalCoverage">
+        <MappingFragment StoreEntitySet="tb_List_ServiceGeographicalCoverage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageName" ColumnName="ServiceGeographicalCoverageName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceHasDocumentedProcedures">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceHasDocumentedProcedures">
+        <MappingFragment StoreEntitySet="tb_List_ServiceHasDocumentedProcedures">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresName" ColumnName="ServiceHasDocumentedProceduresName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceHasProcessReengineered">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceHasProcessReengineered">
+        <MappingFragment StoreEntitySet="tb_List_ServiceHasProcessReengineered">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredName" ColumnName="ServiceHasProcessReengineeredName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceHasUnifiedProcesses">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceHasUnifiedProcesses">
+        <MappingFragment StoreEntitySet="tb_List_ServiceHasUnifiedProcesses">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesName" ColumnName="ServiceHasUnifiedProcessesName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceHasWorkflowChart">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceHasWorkflowChart">
+        <MappingFragment StoreEntitySet="tb_List_ServiceHasWorkflowChart">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartName" ColumnName="ServiceHasWorkflowChartName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceMaturityLevel">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceMaturityLevel">
+        <MappingFragment StoreEntitySet="tb_List_ServiceMaturityLevel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="ServiceMaturityLevelName" ColumnName="ServiceMaturityLevelName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceNumberOfBeneficiariesInElectronicFormAnnually">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceNumberOfBeneficiariesInElectronicFormAnnually">
+        <MappingFragment StoreEntitySet="tb_List_ServiceNumberOfBeneficiariesInElectronicFormAnnually">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyName" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceNumberOfElectronicTransactionsPerYear">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceNumberOfElectronicTransactionsPerYear">
+        <MappingFragment StoreEntitySet="tb_List_ServiceNumberOfElectronicTransactionsPerYear">
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearName" ColumnName="ServiceNumberOfElectronicTransactionsPerYearName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServicePriority">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServicePriority">
+        <MappingFragment StoreEntitySet="tb_List_ServicePriority">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="ServicePriorityName" ColumnName="ServicePriorityName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceRepeatedNumberOfUsePerBeneficiary">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceRepeatedNumberOfUsePerBeneficiary">
+        <MappingFragment StoreEntitySet="tb_List_ServiceRepeatedNumberOfUsePerBeneficiary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryName" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceRequirementsAndProceduresForServiceAvailable">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceRequirementsAndProceduresForServiceAvailable">
+        <MappingFragment StoreEntitySet="tb_List_ServiceRequirementsAndProceduresForServiceAvailable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableName" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceTargetAudienceNumber">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceTargetAudienceNumber">
+        <MappingFragment StoreEntitySet="tb_List_ServiceTargetAudienceNumber">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberName" ColumnName="ServiceTargetAudienceNumberName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceType">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceType">
+        <MappingFragment StoreEntitySet="tb_List_ServiceType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceTypeName" ColumnName="ServiceTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_ServiceTypeByBeneficiary">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_ServiceTypeByBeneficiary">
+        <MappingFragment StoreEntitySet="tb_List_ServiceTypeByBeneficiary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceTypeByBeneficiaryID" ColumnName="ServiceTypeByBeneficiaryID" />
+          <ScalarProperty Name="ServiceTypeByBeneficiaryName" ColumnName="ServiceTypeByBeneficiaryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_List_StepToApplyForTheService">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_List_StepToApplyForTheService">
+        <MappingFragment StoreEntitySet="tb_List_StepToApplyForTheService">
+          <ScalarProperty Name="StepToApplyForTheServiceID" ColumnName="StepToApplyForTheServiceID" />
+          <ScalarProperty Name="StepToApplyForTheServiceName" ColumnName="StepToApplyForTheServiceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Querys">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Querys">
+        <MappingFragment StoreEntitySet="tb_Querys">
+          <ScalarProperty Name="QueryID" ColumnName="QueryID" />
+          <ScalarProperty Name="QueryDescription" ColumnName="QueryDescription" />
+          <ScalarProperty Name="QueryText" ColumnName="QueryText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServiceCard_CheckingURLs">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServiceCard_CheckingURLs">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServiceCard_CheckingURLs">
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="OldResult" ColumnName="OldResult" />
+          <ScalarProperty Name="Oldresult2" ColumnName="Oldresult2" />
+          <ScalarProperty Name="result1" ColumnName="result1" />
+          <ScalarProperty Name="detalis1" ColumnName="detalis1" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="detalis" ColumnName="detalis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Activation_Old">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Activation_Old">
+        <MappingFragment StoreEntitySet="tb_Current_Activation_Old">
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetActivated" ColumnName="DatasetActivated" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_MarsadDataset_GSBService_Backup11082017">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_MarsadDataset_GSBService_Backup11082017">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_MarsadDataset_GSBService_Backup11082017">
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetFullName" ColumnName="DatasetFullName" />
+          <ScalarProperty Name="GSBServiceCode" ColumnName="GSBServiceCode" />
+          <ScalarProperty Name="GSBDatasetShortName" ColumnName="GSBDatasetShortName" />
+          <ScalarProperty Name="DatasetAvaiableOnGSB" ColumnName="DatasetAvaiableOnGSB" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="GSBProviderID" ColumnName="GSBProviderID" />
+          <ScalarProperty Name="ShowInResult" ColumnName="ShowInResult" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_Dataset_12082017">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_Dataset_12082017">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_Dataset_12082017">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_Dataset_Backup">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_Dataset_Backup">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_Dataset_Backup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_Dataset_Backup240820161000AM">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_Dataset_Backup240820161000AM">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_Dataset_Backup240820161000AM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_Dataset_Backup271020160141PM">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_Dataset_Backup271020160141PM">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_Dataset_Backup271020160141PM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_Dataset_BeforePublishing">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_Dataset_BeforePublishing">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_Dataset_BeforePublishing">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Intersection_Service_Dataset_Log">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_Dataset_Log">
+        <MappingFragment StoreEntitySet="tb_Current_Intersection_Service_Dataset_Log">
+          <ScalarProperty Name="DsiLogID" ColumnName="DsiLogID" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Service_AllData11102016">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Service_AllData11102016">
+        <MappingFragment StoreEntitySet="tb_Current_Service_AllData11102016">
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ServiceEnglishName" ColumnName="ServiceEnglishName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="FinancedByYesser" ColumnName="FinancedByYesser" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceNow" ColumnName="TimeTakenToDelivereTheServiceNow" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceInFuture" ColumnName="TimeTakenToDelivereTheServiceInFuture" />
+          <ScalarProperty Name="OutsideBranchesToProvideTheService" ColumnName="OutsideBranchesToProvideTheService" />
+          <ScalarProperty Name="DigitalCertificateIssued" ColumnName="DigitalCertificateIssued" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="HigherMaturityServiceLevelToBeReachedID" ColumnName="HigherMaturityServiceLevelToBeReachedID" />
+          <ScalarProperty Name="HigriDateForTransmissitingServiceToTopMaturityLevel" ColumnName="HigriDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="GregorianDateForTransmissitingServiceToTopMaturityLevel" ColumnName="GregorianDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="EnglishHyperLink" ColumnName="EnglishHyperLink" />
+          <ScalarProperty Name="YouTubeLink" ColumnName="YouTubeLink" />
+          <ScalarProperty Name="ServiceManual" ColumnName="ServiceManual" />
+          <ScalarProperty Name="ServiceForm" ColumnName="ServiceForm" />
+          <ScalarProperty Name="ServiceArabicDescription" ColumnName="ServiceArabicDescription" />
+          <ScalarProperty Name="ServiceEnglishDescription" ColumnName="ServiceEnglishDescription" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedManuallyIn6Months" ColumnName="NumberOfServiceRequestProcessedManuallyIn6Months" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedElectronically6Months" ColumnName="NumberOfServiceRequestProcessedElectronically6Months" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Service_backup_09082017">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Service_backup_09082017">
+        <MappingFragment StoreEntitySet="tb_Current_Service_backup_09082017">
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ServiceEnglishName" ColumnName="ServiceEnglishName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="FinancedByYesser" ColumnName="FinancedByYesser" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceNow" ColumnName="TimeTakenToDelivereTheServiceNow" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceInFuture" ColumnName="TimeTakenToDelivereTheServiceInFuture" />
+          <ScalarProperty Name="OutsideBranchesToProvideTheService" ColumnName="OutsideBranchesToProvideTheService" />
+          <ScalarProperty Name="DigitalCertificateIssued" ColumnName="DigitalCertificateIssued" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="HigherMaturityServiceLevelToBeReachedID" ColumnName="HigherMaturityServiceLevelToBeReachedID" />
+          <ScalarProperty Name="HigriDateForTransmissitingServiceToTopMaturityLevel" ColumnName="HigriDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="GregorianDateForTransmissitingServiceToTopMaturityLevel" ColumnName="GregorianDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="EnglishHyperLink" ColumnName="EnglishHyperLink" />
+          <ScalarProperty Name="YouTubeLink" ColumnName="YouTubeLink" />
+          <ScalarProperty Name="ServiceManual" ColumnName="ServiceManual" />
+          <ScalarProperty Name="ServiceForm" ColumnName="ServiceForm" />
+          <ScalarProperty Name="ServiceArabicDescription" ColumnName="ServiceArabicDescription" />
+          <ScalarProperty Name="ServiceEnglishDescription" ColumnName="ServiceEnglishDescription" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedManuallyIn6Months" ColumnName="NumberOfServiceRequestProcessedManuallyIn6Months" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedElectronically6Months" ColumnName="NumberOfServiceRequestProcessedElectronically6Months" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Current_Service_Backup24112016">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Service_Backup24112016">
+        <MappingFragment StoreEntitySet="tb_Current_Service_Backup24112016">
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ServiceEnglishName" ColumnName="ServiceEnglishName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="FinancedByYesser" ColumnName="FinancedByYesser" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceNow" ColumnName="TimeTakenToDelivereTheServiceNow" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceInFuture" ColumnName="TimeTakenToDelivereTheServiceInFuture" />
+          <ScalarProperty Name="OutsideBranchesToProvideTheService" ColumnName="OutsideBranchesToProvideTheService" />
+          <ScalarProperty Name="DigitalCertificateIssued" ColumnName="DigitalCertificateIssued" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="HigherMaturityServiceLevelToBeReachedID" ColumnName="HigherMaturityServiceLevelToBeReachedID" />
+          <ScalarProperty Name="HigriDateForTransmissitingServiceToTopMaturityLevel" ColumnName="HigriDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="GregorianDateForTransmissitingServiceToTopMaturityLevel" ColumnName="GregorianDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="EnglishHyperLink" ColumnName="EnglishHyperLink" />
+          <ScalarProperty Name="YouTubeLink" ColumnName="YouTubeLink" />
+          <ScalarProperty Name="ServiceManual" ColumnName="ServiceManual" />
+          <ScalarProperty Name="ServiceForm" ColumnName="ServiceForm" />
+          <ScalarProperty Name="ServiceArabicDescription" ColumnName="ServiceArabicDescription" />
+          <ScalarProperty Name="ServiceEnglishDescription" ColumnName="ServiceEnglishDescription" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedManuallyIn6Months" ColumnName="NumberOfServiceRequestProcessedManuallyIn6Months" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedElectronically6Months" ColumnName="NumberOfServiceRequestProcessedElectronically6Months" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeAdded">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeAdded">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeAdded">
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ServiceEnglishName" ColumnName="ServiceEnglishName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="FinancedByYesser" ColumnName="FinancedByYesser" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceNow" ColumnName="TimeTakenToDelivereTheServiceNow" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceInFuture" ColumnName="TimeTakenToDelivereTheServiceInFuture" />
+          <ScalarProperty Name="OutsideBranchesToProvideTheService" ColumnName="OutsideBranchesToProvideTheService" />
+          <ScalarProperty Name="DigitalCertificateIssued" ColumnName="DigitalCertificateIssued" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="HigherMaturityServiceLevelToBeReachedID" ColumnName="HigherMaturityServiceLevelToBeReachedID" />
+          <ScalarProperty Name="HigriDateForTransmissitingServiceToTopMaturityLevel" ColumnName="HigriDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="GregorianDateForTransmissitingServiceToTopMaturityLevel" ColumnName="GregorianDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="EnglishHyperLink" ColumnName="EnglishHyperLink" />
+          <ScalarProperty Name="YouTubeLink" ColumnName="YouTubeLink" />
+          <ScalarProperty Name="ServiceManual" ColumnName="ServiceManual" />
+          <ScalarProperty Name="ServiceForm" ColumnName="ServiceForm" />
+          <ScalarProperty Name="ServiceArabicDescription" ColumnName="ServiceArabicDescription" />
+          <ScalarProperty Name="ServiceEnglishDescription" ColumnName="ServiceEnglishDescription" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedManuallyIn6Months" ColumnName="NumberOfServiceRequestProcessedManuallyIn6Months" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedElectronically6Months" ColumnName="NumberOfServiceRequestProcessedElectronically6Months" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeDeleted">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeDeleted">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeDeleted">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeUpdated">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeUpdated">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeUpdated">
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ServiceEnglishName" ColumnName="ServiceEnglishName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="FinancedByYesser" ColumnName="FinancedByYesser" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceNow" ColumnName="TimeTakenToDelivereTheServiceNow" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceInFuture" ColumnName="TimeTakenToDelivereTheServiceInFuture" />
+          <ScalarProperty Name="OutsideBranchesToProvideTheService" ColumnName="OutsideBranchesToProvideTheService" />
+          <ScalarProperty Name="DigitalCertificateIssued" ColumnName="DigitalCertificateIssued" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="HigherMaturityServiceLevelToBeReachedID" ColumnName="HigherMaturityServiceLevelToBeReachedID" />
+          <ScalarProperty Name="HigriDateForTransmissitingServiceToTopMaturityLevel" ColumnName="HigriDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="GregorianDateForTransmissitingServiceToTopMaturityLevel" ColumnName="GregorianDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="EnglishHyperLink" ColumnName="EnglishHyperLink" />
+          <ScalarProperty Name="YouTubeLink" ColumnName="YouTubeLink" />
+          <ScalarProperty Name="ServiceManual" ColumnName="ServiceManual" />
+          <ScalarProperty Name="ServiceForm" ColumnName="ServiceForm" />
+          <ScalarProperty Name="ServiceArabicDescription" ColumnName="ServiceArabicDescription" />
+          <ScalarProperty Name="ServiceEnglishDescription" ColumnName="ServiceEnglishDescription" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedManuallyIn6Months" ColumnName="NumberOfServiceRequestProcessedManuallyIn6Months" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedElectronically6Months" ColumnName="NumberOfServiceRequestProcessedElectronically6Months" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeAdded">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeAdded">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeAdded">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceChannelID" ColumnName="ServiceChannelID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeDeleted">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeDeleted">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeDeleted">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceChannelID" ColumnName="ServiceChannelID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeUpdated">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeUpdated">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeUpdated">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceChannelID" ColumnName="ServiceChannelID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeAdded">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeAdded">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeAdded">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeDeleted">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeDeleted">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeDeleted">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeUpdated">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeUpdated">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeUpdated">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ConsumerID" ColumnName="ConsumerID" />
+          <ScalarProperty Name="DatasetID" ColumnName="DatasetID" />
+          <ScalarProperty Name="ProviderID" ColumnName="ProviderID" />
+          <ScalarProperty Name="DatasetActivatedToUsedByService" ColumnName="DatasetActivatedToUsedByService" />
+          <ScalarProperty Name="GSBDatasetID" ColumnName="GSBDatasetID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeAdded">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeAdded">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeAdded">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceTypeByBeneficiaryID" ColumnName="ServiceTypeByBeneficiaryID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeDeleted">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeDeleted">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeDeleted">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceTypeByBeneficiaryID" ColumnName="ServiceTypeByBeneficiaryID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeUpdated">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeUpdated">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeUpdated">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceTypeByBeneficiaryID" ColumnName="ServiceTypeByBeneficiaryID" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeAdded">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeAdded">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeAdded">
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ServiceEnglishName" ColumnName="ServiceEnglishName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="FinancedByYesser" ColumnName="FinancedByYesser" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceNow" ColumnName="TimeTakenToDelivereTheServiceNow" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceInFuture" ColumnName="TimeTakenToDelivereTheServiceInFuture" />
+          <ScalarProperty Name="OutsideBranchesToProvideTheService" ColumnName="OutsideBranchesToProvideTheService" />
+          <ScalarProperty Name="DigitalCertificateIssued" ColumnName="DigitalCertificateIssued" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="HigherMaturityServiceLevelToBeReachedID" ColumnName="HigherMaturityServiceLevelToBeReachedID" />
+          <ScalarProperty Name="HigriDateForTransmissitingServiceToTopMaturityLevel" ColumnName="HigriDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="GregorianDateForTransmissitingServiceToTopMaturityLevel" ColumnName="GregorianDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="EnglishHyperLink" ColumnName="EnglishHyperLink" />
+          <ScalarProperty Name="YouTubeLink" ColumnName="YouTubeLink" />
+          <ScalarProperty Name="ServiceManual" ColumnName="ServiceManual" />
+          <ScalarProperty Name="ServiceForm" ColumnName="ServiceForm" />
+          <ScalarProperty Name="ServiceArabicDescription" ColumnName="ServiceArabicDescription" />
+          <ScalarProperty Name="ServiceEnglishDescription" ColumnName="ServiceEnglishDescription" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedManuallyIn6Months" ColumnName="NumberOfServiceRequestProcessedManuallyIn6Months" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedElectronically6Months" ColumnName="NumberOfServiceRequestProcessedElectronically6Months" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeDeleted">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeDeleted">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeDeleted">
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeUpdated">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeUpdated">
+        <MappingFragment StoreEntitySet="tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeUpdated">
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+          <ScalarProperty Name="ServiceArabicName" ColumnName="ServiceArabicName" />
+          <ScalarProperty Name="ServiceEnglishName" ColumnName="ServiceEnglishName" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="ServiceTypeID" ColumnName="ServiceTypeID" />
+          <ScalarProperty Name="ServiceClassificationID" ColumnName="ServiceClassificationID" />
+          <ScalarProperty Name="ServiceGeographicalCoverageID" ColumnName="ServiceGeographicalCoverageID" />
+          <ScalarProperty Name="ServicePriorityID" ColumnName="ServicePriorityID" />
+          <ScalarProperty Name="ServiceFees" ColumnName="ServiceFees" />
+          <ScalarProperty Name="FinancedByYesser" ColumnName="FinancedByYesser" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceNow" ColumnName="TimeTakenToDelivereTheServiceNow" />
+          <ScalarProperty Name="TimeTakenToDelivereTheServiceInFuture" ColumnName="TimeTakenToDelivereTheServiceInFuture" />
+          <ScalarProperty Name="OutsideBranchesToProvideTheService" ColumnName="OutsideBranchesToProvideTheService" />
+          <ScalarProperty Name="DigitalCertificateIssued" ColumnName="DigitalCertificateIssued" />
+          <ScalarProperty Name="ServiceMaturityLevelID" ColumnName="ServiceMaturityLevelID" />
+          <ScalarProperty Name="HigherMaturityServiceLevelToBeReachedID" ColumnName="HigherMaturityServiceLevelToBeReachedID" />
+          <ScalarProperty Name="HigriDateForTransmissitingServiceToTopMaturityLevel" ColumnName="HigriDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="GregorianDateForTransmissitingServiceToTopMaturityLevel" ColumnName="GregorianDateForTransmissitingServiceToTopMaturityLevel" />
+          <ScalarProperty Name="ServiceTargetAudienceNumberID" ColumnName="ServiceTargetAudienceNumberID" />
+          <ScalarProperty Name="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" ColumnName="ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID" />
+          <ScalarProperty Name="ServiceNumberOfElectronicTransactionsPerYearID" ColumnName="ServiceNumberOfElectronicTransactionsPerYearID" />
+          <ScalarProperty Name="ServiceRepeatedNumberOfUsePerBeneficiaryID" ColumnName="ServiceRepeatedNumberOfUsePerBeneficiaryID" />
+          <ScalarProperty Name="ServiceAutomationPortabilityInItsCurrentStateID" ColumnName="ServiceAutomationPortabilityInItsCurrentStateID" />
+          <ScalarProperty Name="ServiceRequirementsAndProceduresForServiceAvailableID" ColumnName="ServiceRequirementsAndProceduresForServiceAvailableID" />
+          <ScalarProperty Name="ServiceHasDocumentedProceduresID" ColumnName="ServiceHasDocumentedProceduresID" />
+          <ScalarProperty Name="ServiceHasWorkflowChartID" ColumnName="ServiceHasWorkflowChartID" />
+          <ScalarProperty Name="ServiceHasProcessReengineeredID" ColumnName="ServiceHasProcessReengineeredID" />
+          <ScalarProperty Name="ServiceHasUnifiedProcessesID" ColumnName="ServiceHasUnifiedProcessesID" />
+          <ScalarProperty Name="ArabicHyperLink" ColumnName="ArabicHyperLink" />
+          <ScalarProperty Name="EnglishHyperLink" ColumnName="EnglishHyperLink" />
+          <ScalarProperty Name="YouTubeLink" ColumnName="YouTubeLink" />
+          <ScalarProperty Name="ServiceManual" ColumnName="ServiceManual" />
+          <ScalarProperty Name="ServiceForm" ColumnName="ServiceForm" />
+          <ScalarProperty Name="ServiceArabicDescription" ColumnName="ServiceArabicDescription" />
+          <ScalarProperty Name="ServiceEnglishDescription" ColumnName="ServiceEnglishDescription" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedManuallyIn6Months" ColumnName="NumberOfServiceRequestProcessedManuallyIn6Months" />
+          <ScalarProperty Name="NumberOfServiceRequestProcessedElectronically6Months" ColumnName="NumberOfServiceRequestProcessedElectronically6Months" />
+          <ScalarProperty Name="MyComments" ColumnName="MyComments" />
+          <ScalarProperty Name="ImportingDate" ColumnName="ImportingDate" />
+          <ScalarProperty Name="VersionNumber" ColumnName="VersionNumber" />
+          <ScalarProperty Name="VersionDate" ColumnName="VersionDate" />
+          <ScalarProperty Name="DataSourceName" ColumnName="DataSourceName" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="tb_Current_Intersection_Service_Service" TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_Service" StoreEntitySet="tb_Current_Intersection_Service_Service">
+      <EndProperty Name="tb_Current_Service">
+        <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+      </EndProperty>
+      <EndProperty Name="tb_Current_Service1">
+        <ScalarProperty Name="ServiceID" ColumnName="DepenOnThisServiceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tb_Current_Intersection_Service_StepToApplyForTheService" TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Intersection_Service_StepToApplyForTheService" StoreEntitySet="tb_Current_Intersection_Service_StepToApplyForTheService">
+      <EndProperty Name="tb_List_StepToApplyForTheService">
+        <ScalarProperty Name="StepToApplyForTheServiceID" ColumnName="StepToApplyForTheServiceID" />
+      </EndProperty>
+      <EndProperty Name="tb_Current_Service">
+        <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

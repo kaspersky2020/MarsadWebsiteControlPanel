@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Marsad080620160430PM_Test_V1_TemporaryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tb_Current_Agency">
+    <Key>
+      <PropertyRef Name="AgencyID" />
+    </Key>
+    <Property Name="AgencyID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AgencyArabicName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AgencyEnglishName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="AgencyEnglishNameAbbreviation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AgencyCategoryID" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="Marsad080620160430PM_Test_V1_TemporaryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_Current_Agency" EntityType="Self.tb_Current_Agency" />
+  </EntityContainer>
+</Schema>

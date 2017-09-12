@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Marsad080620160430PM_Test_V1_TemporaryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_Current_Agency">
+    <Key>
+      <PropertyRef Name="AgencyID" />
+    </Key>
+    <Property Name="AgencyID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgencyArabicName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AgencyEnglishName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AgencyEnglishNameAbbreviation" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgencyCategoryID" Type="int" />
+  </EntityType>
+  <EntityContainer Name="Marsad080620160430PM_Test_V1_TemporaryModelStoreContainer">
+    <EntitySet Name="tb_Current_Agency" EntityType="Self.tb_Current_Agency" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

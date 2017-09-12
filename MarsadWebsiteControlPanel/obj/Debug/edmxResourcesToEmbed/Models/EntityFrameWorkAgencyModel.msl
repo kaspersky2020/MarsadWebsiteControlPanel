@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Marsad080620160430PM_Test_V1_TemporaryModelStoreContainer" CdmEntityContainer="Marsad080620160430PM_Test_V1_TemporaryEntities">
+    <EntitySetMapping Name="tb_Current_Agency">
+      <EntityTypeMapping TypeName="Marsad080620160430PM_Test_V1_TemporaryModel.tb_Current_Agency">
+        <MappingFragment StoreEntitySet="tb_Current_Agency">
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="AgencyArabicName" ColumnName="AgencyArabicName" />
+          <ScalarProperty Name="AgencyEnglishName" ColumnName="AgencyEnglishName" />
+          <ScalarProperty Name="AgencyEnglishNameAbbreviation" ColumnName="AgencyEnglishNameAbbreviation" />
+          <ScalarProperty Name="AgencyCategoryID" ColumnName="AgencyCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
