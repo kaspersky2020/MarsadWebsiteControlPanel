@@ -1,0 +1,371 @@
+﻿@model MarsadWebsiteControlPanel.Models.tb_Current_Service
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tb_Current_Service</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConsumerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgencyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgencyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceArabicName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceArabicName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceEnglishName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceEnglishName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartmentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartmentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceTypeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceTypeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceClassificationID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceClassificationID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceGeographicalCoverageID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceGeographicalCoverageID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServicePriorityID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServicePriorityID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceFees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceFees)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FinancedByYesser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FinancedByYesser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeTakenToDelivereTheServiceNow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeTakenToDelivereTheServiceNow)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeTakenToDelivereTheServiceInFuture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeTakenToDelivereTheServiceInFuture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OutsideBranchesToProvideTheService)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OutsideBranchesToProvideTheService)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DigitalCertificateIssued)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DigitalCertificateIssued)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceMaturityLevelID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceMaturityLevelID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HigherMaturityServiceLevelToBeReachedID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HigherMaturityServiceLevelToBeReachedID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HigriDateForTransmissitingServiceToTopMaturityLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HigriDateForTransmissitingServiceToTopMaturityLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GregorianDateForTransmissitingServiceToTopMaturityLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GregorianDateForTransmissitingServiceToTopMaturityLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceTargetAudienceNumberID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceTargetAudienceNumberID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceNumberOfBeneficiariesInElectronicFormAnnuallyID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceNumberOfElectronicTransactionsPerYearID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceNumberOfElectronicTransactionsPerYearID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceRepeatedNumberOfUsePerBeneficiaryID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceRepeatedNumberOfUsePerBeneficiaryID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceAutomationPortabilityInItsCurrentStateID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceAutomationPortabilityInItsCurrentStateID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceRequirementsAndProceduresForServiceAvailableID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceRequirementsAndProceduresForServiceAvailableID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceHasDocumentedProceduresID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceHasDocumentedProceduresID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceHasWorkflowChartID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceHasWorkflowChartID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceHasProcessReengineeredID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceHasProcessReengineeredID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceHasUnifiedProcessesID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceHasUnifiedProcessesID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArabicHyperLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArabicHyperLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnglishHyperLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnglishHyperLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YouTubeLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YouTubeLink)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceManual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceManual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceForm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceForm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceArabicDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceArabicDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceEnglishDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceEnglishDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfServiceRequestProcessedManuallyIn6Months)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfServiceRequestProcessedManuallyIn6Months)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfServiceRequestProcessedElectronically6Months)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfServiceRequestProcessedElectronically6Months)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MyComments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MyComments)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImportingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImportingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VersionNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VersionNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VersionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VersionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataSourceName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataSourceName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActionTaken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActionTaken)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ServiceID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

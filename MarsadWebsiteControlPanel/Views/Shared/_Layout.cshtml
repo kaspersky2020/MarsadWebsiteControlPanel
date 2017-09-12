@@ -22,7 +22,9 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Agency", "Agency", "Home")</li>
+                    <li>@Html.ActionLink("Agency", "Index","tb_current_Agnecy")</li>
+                    <li>@Html.ActionLink("Service" , "Index", "tb_current_Service")</li>
+                    <li>@Html.ActionLink("Intersection_Service_Dataset", "Index", "tb_Current_Intersection_Service_Dataset")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

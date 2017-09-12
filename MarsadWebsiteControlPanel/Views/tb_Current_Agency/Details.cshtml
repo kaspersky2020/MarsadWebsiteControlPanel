@@ -1,0 +1,67 @@
+﻿@model MarsadWebsiteControlPanel.Models.tb_Current_Agency
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tb_Current_Agency</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AgencyArabicName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgencyArabicName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgencyEnglishName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgencyEnglishName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgencyEnglishNameAbbreviation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgencyEnglishNameAbbreviation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgencyCategoryID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgencyCategoryID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tb_Current_Consumer.ConsumerArabicName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tb_Current_Consumer.ConsumerArabicName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tb_Current_Provider.ProviderArabicName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tb_Current_Provider.ProviderArabicName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AgencyID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
