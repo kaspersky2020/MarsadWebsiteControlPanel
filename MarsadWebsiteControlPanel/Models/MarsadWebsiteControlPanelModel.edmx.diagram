@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aecb1147927f4130a978e4052f4a294b" Name="Diagram1" ZoomLevel="22">
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Activation" Width="1.5" PointX="15.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Agency" Width="1.5" PointX="8.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Consumer" Width="1.5" PointX="11" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Consumer_Old12082017" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_GSBOperation" Width="1.5" PointX="13.25" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_GSBService" Width="1.5" PointX="11" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_MarsadDataset_GSBService" Width="1.5" PointX="13.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_Dataset" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_ServiceChannel" Width="1.5" PointX="8.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_ServiceChannel_Log" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_ServiceTypeByBeneficary" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_ServiceTypeByBeneficary_Log" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_MappingMarsadTableColumns" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_MarsadDataset" Width="1.5" PointX="3" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_MarsadDataset_Log" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_MarsadDataset_Old" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Provider" Width="1.5" PointX="11" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Provider_Old12082017" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Service" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_AgencyCategory" Width="1.5" PointX="11" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceAutomationPortabilityInItsCurrentState" Width="1.5" PointX="5.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceChannel" Width="1.5" PointX="6" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceClassification" Width="1.5" PointX="12.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceFees" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceGeographicalCoverage" Width="1.5" PointX="7.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceHasDocumentedProcedures" Width="1.5" PointX="12.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceHasProcessReengineered" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceHasUnifiedProcesses" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceHasWorkflowChart" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceMaturityLevel" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceNumberOfBeneficiariesInElectronicFormAnnually" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceNumberOfElectronicTransactionsPerYear" Width="1.5" PointX="9.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServicePriority" Width="1.5" PointX="15.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceRepeatedNumberOfUsePerBeneficiary" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceRequirementsAndProceduresForServiceAvailable" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceTargetAudienceNumber" Width="1.5" PointX="5.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceType" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_ServiceTypeByBeneficiary" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_List_StepToApplyForTheService" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Querys" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServiceCard_CheckingURLs" Width="1.5" PointX="17.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Activation_Old" Width="1.5" PointX="17.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_MarsadDataset_GSBService_Backup11082017" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_Dataset_12082017" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_Dataset_Backup" Width="1.5" PointX="18.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_Dataset_Backup240820161000AM" Width="1.5" PointX="5.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_Dataset_Backup271020160141PM" Width="1.5" PointX="19.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_Dataset_BeforePublishing" Width="1.5" PointX="19.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_Dataset_Log" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Service_AllData11102016" Width="1.5" PointX="17.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Service_backup_09082017" Width="1.5" PointX="19.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Current_Service_Backup24112016" Width="1.5" PointX="0.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeAdded" Width="1.5" PointX="2.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeDeleted" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170115_Main_V1_ServicesToBeUpdated" Width="1.5" PointX="21.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeAdded" Width="1.5" PointX="21.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeDeleted" Width="1.5" PointX="21.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISCToBeUpdated" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeAdded" Width="1.5" PointX="7.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeDeleted" Width="1.5" PointX="23.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISDToBeUpdated" Width="1.5" PointX="4.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeAdded" Width="1.5" PointX="23.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeDeleted" Width="1.5" PointX="23.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ISSTypeByBeneficaryToBeUpdated" Width="1.5" PointX="23.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeAdded" Width="1.5" PointX="23.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeDeleted" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.tb_Test_Services_ImportedByWizard_AsIs_AllData20170119_Main_V1_ServicesToBeUpdated" Width="1.5" PointX="13.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.ALIASESNEW1" Width="1.5" PointX="25.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.FindNeededDataset_ForSpecificService" Width="1.5" PointX="25.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.FindTargetConsumer" Width="1.5" PointX="25.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.FindTargetProvider" Width="1.5" PointX="25.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.Valias" Width="1.5" PointX="25.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.Vw_NumberOfTimesDatasetUsed" Width="1.5" PointX="25.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.Vw_Providers1" Width="1.5" PointX="25.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarsadWebsiteControlPanelModel.Vw_Providers2" Width="1.5" PointX="25.75" PointY="24.75" IsExpanded="true" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Activation_tb_Current_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Activation_tb_Current_Agency1" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Activation_tb_Current_GSBOperation" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Activation_tb_Current_GSBService" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Consumer_tb_Current_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_GSBService_tb_Current_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Provider_tb_Current_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_List_AgencyCategory_tb_Current_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_GSBOperation_tb_Current_GSBService" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Intersection_MarsadDataset_GSBService_tb_Current_GSBService" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Intersection_MarsadDataset_GSBService_tb_Current_MarsadDataset1" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Intersection_Service_Dataset_tb_Current_MarsadDataset" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Intersection_Service_Dataset_tb_Current_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Intersection_Service_ServiceChannel_tb_Current_List_ServiceChannel" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Intersection_Service_ServiceChannel_tb_Current_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Intersection_Service_ServiceTypeByBeneficary_tb_Current_List_ServiceTypeByBeneficiary" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.FK_tb_Current_Intersection_Service_ServiceTypeByBeneficary_tb_Current_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="MarsadWebsiteControlPanelModel.tb_Current_Intersection_Service_StepToApplyForTheService" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
