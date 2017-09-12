@@ -64,13 +64,13 @@ namespace MarsadWebsiteControlPanel.Controllers
         }
 
         // GET: tb_Current_Intersection_Service_Dataset/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(string ServiceID, int DatasetID )
         {
-            if (id == null)
+            if (ServiceID == null || DatasetID < 0)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            tb_Current_Intersection_Service_Dataset tb_Current_Intersection_Service_Dataset = db.tb_Current_Intersection_Service_Dataset.Find(id);
+            tb_Current_Intersection_Service_Dataset tb_Current_Intersection_Service_Dataset = db.tb_Current_Intersection_Service_Dataset.Find(ServiceID, DatasetID);
             if (tb_Current_Intersection_Service_Dataset == null)
             {
                 return HttpNotFound();
