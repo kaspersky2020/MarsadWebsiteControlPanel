@@ -1,64 +1,89 @@
-﻿@model IEnumerable<MarsadWebsiteControlPanel.Models.tb_Current_Agency>
+﻿@*@model IEnumerable<MarsadWebsiteControlPanel.Models.tb_Current_Agency>*@
+  
+@model IPagedList<MarsadWebsiteControlPanel.Models.tb_Current_Agency>
 
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.AgencyArabicName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AgencyEnglishName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AgencyEnglishNameAbbreviation)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AgencyCategoryID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.tb_Current_Consumer.ConsumerArabicName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.tb_Current_Provider.ProviderArabicName)
-        </th>
-        <th></th>
-    </tr>
+    
+    @using PagedList.Mvc;
+    @using PagedList;
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.AgencyArabicName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AgencyEnglishName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AgencyEnglishNameAbbreviation)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AgencyCategoryID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.tb_Current_Consumer.ConsumerArabicName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.tb_Current_Provider.ProviderArabicName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AgencyID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AgencyID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AgencyID })
-        </td>
-    </tr>
-}
+    <h2>Index</h2>
 
-</table>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+<Div class="active">
+
+    <p>
+        @using (Html.BeginForm("Index", "tb_Current_Agency", FormMethod.Get))
+        {
+            <b>Search by:</b>
+            @Html.RadioButton("searchBy", "AgencyID", new { @checked = true })<text> AgencyID</text>
+            @Html.RadioButton("searchBy", "AgencyArabicName")<text>AgencyArabicName</text>
+            @Html.RadioButton("searchBy", "AgencyCategoryID")<text>AgencyCategoryID</text>
+            @Html.TextBox("Search");
+            <input type="submit" value="Search" />
+        }
+    </p>
+</Div>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AgencyArabicName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AgencyEnglishName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AgencyEnglishNameAbbreviation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AgencyCategoryID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().tb_Current_Consumer.ConsumerArabicName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().tb_Current_Provider.ProviderArabicName)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgencyArabicName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgencyEnglishName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgencyEnglishNameAbbreviation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgencyCategoryID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tb_Current_Consumer.ConsumerArabicName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tb_Current_Provider.ProviderArabicName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.AgencyID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.AgencyID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.AgencyID })
+                </td>
+            </tr>
+        }
+
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, searchBy = Request.QueryString["searchBy"], search = Request.QueryString["Search"] }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayItemSliceAndTotal = true })
+
+
+    </table>

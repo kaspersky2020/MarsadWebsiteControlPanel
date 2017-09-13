@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MarsadWebsiteControlPanel.Models;
+using PagedList.Mvc;
+using PagedList;
 
 namespace MarsadWebsiteControlPanel.Controllers
 {
@@ -15,11 +17,81 @@ namespace MarsadWebsiteControlPanel.Controllers
         private MarsadWebsiteControlPanelEntities db = new MarsadWebsiteControlPanelEntities();
 
         // GET: tb_Current_Intersection_Service_Dataset
-        public ActionResult Index()
+        //public ActionResult Index()
+        //{
+        //    var tb_Current_Intersection_Service_Dataset = db.tb_Current_Intersection_Service_Dataset.Include(t => t.tb_Current_MarsadDataset).Include(t => t.tb_Current_Service);
+        //    return View(tb_Current_Intersection_Service_Dataset.ToList());
+        //}
+
+        //GET: tb_Current_Intersection_Service_Dataset
+        public ActionResult Index(string searchBy, string Search, int? page)
         {
             var tb_Current_Intersection_Service_Dataset = db.tb_Current_Intersection_Service_Dataset.Include(t => t.tb_Current_MarsadDataset).Include(t => t.tb_Current_Service);
-            return View(tb_Current_Intersection_Service_Dataset.ToList());
+           // return View(tb_Current_Intersection_Service_Dataset.ToList());
+            if (searchBy == "ServiceID")
+            {
+                // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+                return View(db.tb_Current_Intersection_Service_Dataset.Where(x => x.ServiceID.Contains(Search)).ToList().ToPagedList(page ?? 1, 50));
+            }
+            else if (searchBy == "DatasetID")
+            {
+                // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+                return View(db.tb_Current_Intersection_Service_Dataset.Where(x => x.DatasetID.ToString().Contains(Search)).ToList().ToPagedList(page ?? 1, 50));
+            }
+            else if (searchBy == "AgencyName")
+            {
+                // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+                return View(db.tb_Current_Intersection_Service_Dataset.Where(x => x.tb_Current_Service.AgencyName.ToString().Contains(Search)).ToList().ToPagedList(page ?? 1, 50));
+            }
+            else if (searchBy == "ServiceArabicName")
+            {
+                // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+                return View(db.tb_Current_Intersection_Service_Dataset.Where(x => x.tb_Current_Service.ServiceArabicName.ToString().Contains(Search)).ToList().ToPagedList(page ?? 1, 50));
+            }
+            else if (searchBy == "DatasetFullName")
+            {
+                // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+                return View(db.tb_Current_Intersection_Service_Dataset.Where(x => x.tb_Current_MarsadDataset.DatasetFullName.ToString().Contains(Search)).ToList().ToPagedList(page ?? 1, 50));
+            }
+            //else if (searchBy == "DatasetID")
+            //{
+            //    // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+            //    return View(db.tb_Current_Intersection_Service_Dataset.Where(x => x.DatasetID.ToString().Contains(Search)).ToList().ToPagedList(page ?? 1, 50));
+            //}
+            //else if (searchBy == "DatasetID")
+            //{
+            //    // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+            //    return View(db.tb_Current_Intersection_Service_Dataset.Where(x => x.DatasetID.ToString().Contains(Search)).ToList().ToPagedList(page ?? 1, 50));
+            //}
+            else
+            {
+                return View(tb_Current_Intersection_Service_Dataset.ToList().ToPagedList(page ?? 1, 50));
+            }
         }
+
+        //public ActionResult Index(string searchBy, string search, int? page)
+        //{
+        //    //return View(db.tb_Current_Service.ToList());
+
+        //    var tb_Current_Service = db.tb_Current_Service.Include(t => t.tb_Current_Intersection_Service_Dataset).Include(t => t.tb_Current_Intersection_Service_ServiceChannel);
+        //    // return View(tb_Current_Agency.ToList());
+
+        //    if (searchBy == "ServiceID")
+        //    {
+        //        // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+        //        return View(db.tb_Current_Service.Where(x => x.ServiceID.Contains(search) || search == null).ToList().ToPagedList(page ?? 1, 50));
+        //    }
+        //    else if (searchBy == "ServiceArabicName")
+        //    {
+        //        // return View(db.tb_Current_Agency.Where(x => x.AgencyID.(search)).ToList());
+        //        return View(db.tb_Current_Service.Where(x => x.ServiceArabicName.Contains(search) || search == null).ToList().ToPagedList(page ?? 1, 50));
+        //    }
+
+        //    else
+        //    {
+        //        return View(db.tb_Current_Service.Where(x => x.AgencyName.ToString().Contains(search) || search == null).ToList().ToPagedList(page ?? 1, 50));
+        //    }
+        //}
 
         // GET: tb_Current_Intersection_Service_Dataset/Details/5
         public ActionResult Details(string id)

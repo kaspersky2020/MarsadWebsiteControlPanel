@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MarsadWebsiteControlPanel.Models;
+using PagedList.Mvc;
+using PagedList;
 
 namespace MarsadWebsiteControlPanel.Controllers
 {
@@ -15,10 +17,31 @@ namespace MarsadWebsiteControlPanel.Controllers
         private MarsadWebsiteControlPanelEntities db = new MarsadWebsiteControlPanelEntities();
 
         // GET: tb_Current_Agency
-        public ActionResult Index()
+        //public ActionResult Index()
+        //{
+        //    var tb_Current_Agency = db.tb_Current_Agency.Include(t => t.tb_Current_Consumer).Include(t => t.tb_Current_Provider);
+        //    return View(tb_Current_Agency.ToList());
+        //}
+
+
+        public ActionResult Index(string searchBy, string Search, int? page)
         {
-            var tb_Current_Agency = db.tb_Current_Agency.Include(t => t.tb_Current_Consumer).Include(t => t.tb_Current_Provider);
-            return View(tb_Current_Agency.ToList());
+            if (searchBy == "AgencyID")
+            {
+                return View(db.tb_Current_Agency.Where(x => x.AgencyID.Contains(Search)).ToList().ToPagedList(page ?? 1, 30));
+            }
+            else if (searchBy == "AgencyArabicName")
+            {
+                return View(db.tb_Current_Agency.Where(x => x.AgencyArabicName.Contains(Search)).ToList().ToPagedList(page ?? 1, 30));
+            }
+            else if (searchBy == "AgencyCategoryID")
+            {
+                return View(db.tb_Current_Agency.Where(x => x.AgencyCategoryID.ToString().Contains(Search)).ToList().ToPagedList(page ?? 1, 30));
+            }
+            else
+            {
+                return View(db.tb_Current_Agency.ToList().ToPagedList(page ?? 1, 30));
+            }
         }
 
         // GET: tb_Current_Agency/Details/5

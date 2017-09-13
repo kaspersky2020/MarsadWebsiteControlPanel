@@ -158,6 +158,10 @@ C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControl
 C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\obj\Debug\MarsadWebsiteControlPanel.csprojResolveAssemblyReference.cache
 C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\obj\Debug\MarsadWebsiteControlPanel.dll
 C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\obj\Debug\MarsadWebsiteControlPanel.pdb
+C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\bin\PagedList.dll
+C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\bin\PagedList.Mvc.dll
+C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\bin\PagedList.xml
+C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\bin\PagedList.Mvc.xml
+C:\Users\Spectre\Documents\GitHub\MarsadWebsiteControlPanel\MarsadWebsiteControlPanel\obj\Debug\MarsadWebsiteControlPanel.csprojResolveAssemblyReference.cache
